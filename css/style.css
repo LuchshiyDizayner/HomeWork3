@@ -23,7 +23,6 @@ h1, h2, h3, h4, h5, h6{
 
 .desktop {
     width: 700px;
-    height: 700px;
 }
 
 .header {
@@ -46,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 .title {
     font-size: 37px;
     margin-top: 142;
-    width: 650px;
+    width: 100%;
 }
 
 span {
@@ -55,7 +54,7 @@ span {
 
 .intro {
     margin-bottom: 49px;
-    width: 404px;
+    width: 100%
     margin-top: 30px;
     font-family: "open-sans",sans-serif;
     font-weight: regular;
@@ -178,19 +177,23 @@ p {
     .container {
         width: 960px;
     }
-    
-    .desktop {
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        left: 55%;
-        top: 150px;
-    }
 
     .offer {
         margin-top: 135px;
     }
     
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header {
+        padding-bottom: 0px;
+    }
+
+    .desktop {
+        width: 100%;
+    }
     
 }
 
@@ -200,22 +203,16 @@ p {
         width: 720px;
     }
 
-    .desktop {
-        top: 450px;
-        left: 35%;
-    }
-
     .offer {
         margin-top: 100px;
     }
 
-    .header {
-        padding-bottom: 400px;
     }
 
     .form {
         padding-left: 27%;
     }
+
 }
 
 /* 576px - 768px */
@@ -228,33 +225,13 @@ p {
         width:100%
     }
 
-    .desktop {
-        left: 7%;
-        top: 570px;
-    }
-    .header {
-        padding-bottom: 500px;
-    }
-
     .skills {
         flex-direction: column;
-        position: absolute;
-        left: 22%;
-
     }
 
     .skill {
         padding-bottom: 30px;
     }
-
-    .learn {
-        padding-bottom: 800px;
-    }
-
-    .form {
-        padding-left: 17%;
-    }
-    
 }
 
 /* 320px - 576px*/
@@ -267,16 +244,9 @@ p {
         width: 100%;
     }
 
-    .desktop {
-    width: 300px;
-    height: 300px;
-    left: 5%;
-    top: 590px;
+    
     }
-
-    .header {
-        padding-bottom: 350px;
-    }   
+  
     
     .skills {
         width: 100%;
