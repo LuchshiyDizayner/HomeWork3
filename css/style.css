@@ -165,3 +165,44 @@ p {
     text-align: center;
     font-size: 14px;
 }
+
+/*Responsive*/
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        display: block;
+        width: 100%;
+       
+    }
+
+    .form {
+        margin-left: 0px;
+    }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* 320 px - 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
