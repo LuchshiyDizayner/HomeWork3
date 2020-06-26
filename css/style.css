@@ -4,7 +4,10 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
+}
 
+.logo{
+    align-self: flex-start;
 }
 
 div, p, input,button,form, span, a, ul,li {
@@ -20,11 +23,20 @@ h1, h2, h3, h4, h5, h6{
 .container {
     width: 1170px;
     margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desktop {
+    width: 100%;
 }
 
 .header {
     background-image: linear-gradient(to right bottom, #4ebffe, #46b3f5, #40a7ec, #3b9be3, #378fd9);
     padding-top: 62px;
+    padding-bottom: 109px;
     color: white;
     
 }
@@ -41,7 +53,7 @@ h1, h2, h3, h4, h5, h6{
 .title {
     font-size: 37px;
     margin-top: 142;
-    width: 650px;
+    width: 100%;
 }
 
 span {
@@ -50,7 +62,7 @@ span {
 
 .intro {
     margin-bottom: 49px;
-    width: 404px;
+    width: 100%;
     margin-top: 30px;
     font-family: "open-sans",sans-serif;
     font-weight: regular;
@@ -124,18 +136,17 @@ p {
 .mail {
     background: #ecf3f8;
     padding-top: 100px;
-    padding-bottom: 105px;
+    padding-bottom: 100px;
 }
 
 .form {
-    width: 340px;
+    width: 100%;
+    max-width: 40%;
     padding-top: 55px;
-    margin-left: 414px;
-    
 }
 
 .input {
-    width: 340px;
+    width: 100%;
     height: 46px;
     border: 1px solid #bbbbbb;
     font-size: 15px;
@@ -198,11 +209,35 @@ p {
     .container {
         width: 540px;
     }
+
+    .wrapper {
+        width:100%
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill {
+        padding-bottom: 30px;
+        width: 100%;
+    }
 }
 
-/* 320 px - 576px */
+/* 320px - 576px*/
 @media screen and (max-width: 576px) {
     .container {
         width: 90%;
+    }
+
+    .offer {
+        width: 100%;
+    }
+    
+  
+    
+    .skills {
+        width: 100%;
+
     }
 }
