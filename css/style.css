@@ -202,6 +202,15 @@ p {
     .container {
         width: 720px;
     }
+    
+    .skills {
+        flex-direction: column;
+    }
+
+    .skill {
+        padding-bottom: 30px;
+        width: 100%;
+    }
 }
 
 /* 576px - 768px */
@@ -214,14 +223,7 @@ p {
         width:100%
     }
 
-    .skills {
-        flex-direction: column;
-    }
-
-    .skill {
-        padding-bottom: 30px;
-        width: 100%;
-    }
+  
 }
 
 /* 320px - 576px*/
@@ -239,5 +241,9 @@ p {
     .skills {
         width: 100%;
 
+    }
+
+    .form {
+        max-width:100%;
     }
 }
