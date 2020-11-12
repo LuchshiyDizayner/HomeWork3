@@ -213,10 +213,8 @@ p {
     }
 
     .wrapper {
-        width:100%
+        width:100%;
     }
-
-  
 }
 
 /* 320px - 576px*/
@@ -228,8 +226,6 @@ p {
     .offer {
         width: 100%;
     }
-    
-  
     
     .skills {
         width: 100%;
